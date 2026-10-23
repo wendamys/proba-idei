@@ -65,14 +65,14 @@ p{margin:0}
 .fine{margin-top:var(--s3);color:var(--muted);font-size:.95rem;max-width:34rem}
 
 /* touchstone */
-.stone{position:relative;background:linear-gradient(160deg,#1d2024,#0f1113 70%);border-radius:14px 22px 18px 26px/22px 16px 26px 18px;padding:var(--s4) var(--s3) var(--s3);box-shadow:0 30px 60px -30px #000,inset 0 1px 0 rgba(255,255,255,.04)}
+.stone{position:relative;overflow:hidden;background:linear-gradient(160deg,#1d2024,#0f1113 70%);border-radius:14px 22px 18px 26px/22px 16px 26px 18px;padding:var(--s4) var(--s3) var(--s3);box-shadow:0 30px 60px -30px #000,inset 0 1px 0 rgba(255,255,255,.04)}
 .stone svg.rock{position:absolute;inset:0;width:100%;height:100%;border-radius:inherit;pointer-events:none}
 .streaks{position:relative;display:grid;gap:1.35rem;list-style:none;margin:0;padding:0}
 .streak{display:grid;grid-template-columns:minmax(0,1fr) 11.5rem;gap:var(--s2);align-items:center}
 .trace{height:22px;position:relative}
-.trace i{position:absolute;inset:0;border-radius:12px 4px 10px 3px;background:linear-gradient(90deg,var(--gold-low),var(--gold) 18%,var(--gold-hi) 55%,var(--gold) 85%,transparent);filter:url(#rough);transition:opacity 1.1s cubic-bezier(.16,1,.3,1),filter 1.1s}
+.trace i{position:absolute;inset:0;border-radius:12px 4px 10px 3px;background:linear-gradient(90deg,var(--gold-low),var(--gold) 18%,var(--gold-hi) 55%,var(--gold) 85%,transparent);filter:url(#rough);transition:opacity 1.1s cubic-bezier(.16,1,.3,1)}
 .label{font-size:.92rem;line-height:1.3}
-.label b{display:block;font-weight:600;letter-spacing:.04em;font-size:.8rem;text-transform:uppercase}
+.label b{display:block;font-weight:600;letter-spacing:.04em;font-size:.875rem;text-transform:uppercase}
 .label span{color:var(--muted);transition:color .6s}
 .acid{position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:linear-gradient(90deg,transparent,rgba(185,212,122,.22) 45%,rgba(185,212,122,.06) 60%,transparent);transform:translateX(-110%);opacity:0}
 .tested .acid{animation:wash 1.4s cubic-bezier(.16,1,.3,1) both}
@@ -101,10 +101,10 @@ section.part{padding-block:var(--s5);border-top:1px solid var(--line)}
 .needles{list-style:none;margin:var(--s4) 0 0;padding:0;display:grid;gap:0}
 .needle{display:grid;grid-template-columns:13rem minmax(0,1fr) minmax(0,1fr);gap:var(--s3);padding-block:var(--s3);border-bottom:1px solid var(--line);align-items:start}
 .needle:first-child{border-top:1px solid var(--line)}
-.stamp{display:inline-flex;align-items:center;justify-content:center;min-height:3rem;padding:.5rem 1rem;border:1.5px solid currentColor;border-radius:50% / 46%;font:600 .78rem/1.15 var(--f-body);letter-spacing:.06em;text-transform:uppercase;text-align:center;color:var(--gold);justify-self:start}
+.stamp{display:inline-flex;align-items:center;justify-content:center;min-height:3rem;padding:.5rem 1rem;border:1.5px solid currentColor;border-radius:50% / 46%;font:600 .875rem/1.15 var(--f-body);letter-spacing:.06em;text-transform:uppercase;text-align:center;color:var(--gold);justify-self:start}
 .needle[data-r="0"] .stamp{color:#c9826b}
 .needle[data-r="1"] .stamp{color:var(--muted)}
-.needle h3{font-family:var(--f-body);font-weight:600;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:.35rem}
+.needle h3{font-family:var(--f-body);font-weight:600;font-size:.875rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:.35rem}
 .needle p{font-size:.98rem}
 
 /* sample verdict */
@@ -112,7 +112,7 @@ section.part{padding-block:var(--s5);border-top:1px solid var(--line)}
 .sheet{background:var(--stone-2);border:1px solid var(--line);padding:var(--s4);border-radius:4px;font-size:.98rem}
 .sheet .rung{display:flex;gap:.75rem;align-items:center;flex-wrap:wrap;margin-bottom:var(--s3)}
 .sheet dl{margin:0;display:grid;gap:.9rem}
-.sheet dt{font-weight:600;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.sheet dt{font-weight:600;font-size:.875rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
 .sheet dd{margin:.2rem 0 0}
 .aside{color:var(--muted);font-size:.95rem;display:grid;gap:var(--s2)}
 .aside strong{color:var(--ink);font-weight:500}
@@ -172,7 +172,7 @@ footer{border-top:1px solid var(--line);padding-block:var(--s3) var(--s4);color:
       <h1>Проверка идеи стартапа <em>за 500 ₽</em></h1>
       <p class="lede">Пришлите идею в Telegram. Через 48 часов получите разбор рынка и конкурентов и прямой ответ: строить, проверять дальше или остановиться. С одним конкретным шагом на ближайшую неделю.</p>
       <div class="act">
-        <a class="btn" href="https://t.me/BSTGEN" target="_blank" rel="noopener">
+        <a class="btn" href="https://t.me/BSTGEN">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.4 4.2 2.9 11.3c-1.2.5-1.2 1.2-.2 1.5l4.7 1.5 1.8 5.6c.2.6.1.9.8.9.5 0 .7-.2 1-.5l2.3-2.2 4.8 3.5c.9.5 1.5.2 1.7-.8l3.1-14.7c.3-1.3-.5-1.9-1.5-1.4ZM8.9 14l9-5.7c.4-.3.8-.1.5.2l-7.7 7-.3 3.2L8.9 14Z"/></svg>
           Написать в Telegram
         </a>
@@ -265,7 +265,7 @@ footer{border-top:1px solid var(--line);padding-block:var(--s3) var(--s4);color:
   <div class="close">
     <h2>Пришлите идею, пока вы не потратили на неё месяц</h2>
     <div class="act" style="margin-top:0">
-      <a class="btn" href="https://t.me/BSTGEN" target="_blank" rel="noopener">Написать в Telegram</a>
+      <a class="btn" href="https://t.me/BSTGEN">Написать в Telegram</a>
       <span class="handle"><code id="h2">@BSTGEN</code><button class="copy" type="button" data-copy="#h2">Скопировать</button></span>
     </div>
   </div>
@@ -293,7 +293,7 @@ footer{border-top:1px solid var(--line);padding-block:var(--s3) var(--s4);color:
       var el=document.querySelector(b.getAttribute('data-copy'));
       var t=el.textContent;
       function done(){b.textContent='Скопировано';setTimeout(function(){b.textContent='Скопировать';},1800);}
-      function pick(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Выделено, нажмите Ctrl+C';}
+      function pick(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Удерживайте ник → Копировать';}
       try{navigator.clipboard.writeText(t).then(done,pick);}catch(e){pick();}
     });
   });
